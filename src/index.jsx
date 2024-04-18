@@ -7,7 +7,7 @@ import Hosting from './pages/Hosting'
 
 
 import Header from './components/Header'
-import Error from './components/Error'
+import Error from './pages/Error'
 
 ReactDOM.render(
     <React.StrictMode>

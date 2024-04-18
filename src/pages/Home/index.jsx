@@ -1,4 +1,6 @@
 import { logementsList } from '../../datas/Logements.js'
+import Gallery from '../../components/Gallery';
+
 
 function Home() {
     return (
@@ -9,6 +11,7 @@ function Home() {
                     <li key={logement.id}>{logement.title}</li>
                 ))}
             </ul>
+            <Gallery />
         </div>
     )
 }
