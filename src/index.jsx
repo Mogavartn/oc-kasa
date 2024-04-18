@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import Hosting from './pages/Hosting'
+
 
 import Header from './components/Header'
 import Error from './components/Error'
@@ -14,6 +16,7 @@ ReactDOM.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/hosting" element={<Hosting />} />
                 <Route path="*" element={<Error />} />
             </Routes>
         </Router>
