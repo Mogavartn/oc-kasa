@@ -6,21 +6,20 @@ import '../../styles/Card.css'
 
 const CardTitle = styled.span`
     color: black;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: normal;
     align-self: center;
 `
 
 const CardImage = styled.img`
+	object-fit: cover;
     height: 150px;
-    width: 150px;
+    width: 100%;
     align-self: center;
-    border-radius: 50%;
 `
 
 const CardWrapper = styled.div`
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     padding: 15px;
     background-color: ${colors.backgroundLight};

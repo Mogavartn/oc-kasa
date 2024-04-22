@@ -5,12 +5,12 @@ import Gallery from '../../components/Gallery';
 function Home() {
     return (
         <div>
-            <h1> KASA 🏠</h1>
-            <ul>
+{/*            <ul>
                 {logementsList.map((logement) => (
                     <li key={logement.id}>{logement.title}</li>
                 ))}
             </ul>
+*/}
             <Gallery />
         </div>
     )
