@@ -1,7 +1,7 @@
 import { logementsList } from '../../datas/Logements.js'
 import styled from 'styled-components'
-import colors from '../../styles/colors'
-import Card from '../../components/Card'
+import colors from '../../styles/colors.js'
+import Card from '../Card/Card.jsx'
 
 const CardsContainer = styled.div`
     display: grid;
@@ -13,11 +13,10 @@ const CardsContainer = styled.div`
 `
 
 export default function Gallery() {
-
     return (
-        <main className='home_gallery'>
+        <main className="home_gallery">
             <CardsContainer>
-                {logementsList.map(logement => {
+                {logementsList.map((logement) => {
                     return (
                         <Card
                             key={logement.id}

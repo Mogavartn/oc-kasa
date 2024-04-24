@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import Header from './components/Header'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Error from './components/Error'
+import Header from './components/Header/Header'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+import Error from './components/Error/Error'
 
-import Home from './pages/Home'
-import About from './pages/About'
-import Hosting from './pages/Hosting'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Hosting from './pages/Hosting/Hosting'
 
 
 
