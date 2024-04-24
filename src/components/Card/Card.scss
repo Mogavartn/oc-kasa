@@ -10,7 +10,8 @@
     &:hover {
         cursor: pointer;
         box-shadow: 4px 4px 20px #e2e3e9;
-        transform: scale(1.005);
+        transform: scale(1.03);
+        transition : 0.35s ease-in-out;
     }
 
     img{
@@ -29,6 +30,6 @@
         right: 20px;
         font-weight: 500;
         font-size: 18px;
-        color: $color-primary;
+        color: $primary-color;
     }
 }

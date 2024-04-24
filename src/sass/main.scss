@@ -1,2 +1,13 @@
 @import './_variables';
 @import './mixins';
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: auto;
+    max-width: 1440px;
+    font-size: 18px;
+    color: $secondary-color;
+    font-family: 'Montserrat-Regular';
+    background: $primary-color;
+}

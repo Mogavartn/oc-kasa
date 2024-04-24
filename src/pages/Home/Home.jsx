@@ -2,9 +2,9 @@ import Gallery from '../../components/Gallery/Gallery.jsx'
 
 function Home() {
     return (
-        <div>
+        <body>
             <Gallery />
-        </div>
+        </body>
     )
 }
 
