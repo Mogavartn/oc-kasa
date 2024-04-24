@@ -1,21 +1,10 @@
 import { logementsList } from '../../datas/Logements.js'
-import styled from 'styled-components'
-import colors from '../../styles/colors.js'
 import Card from '../Card/Card.jsx'
-
-const CardsContainer = styled.div`
-    display: grid;
-    gap: 24px;
-    grid-template-rows: 350px 350px;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
-`
+import './Gallery.scss'
 
 export default function Gallery() {
     return (
-        <main className="home_gallery">
-            <CardsContainer>
+        <main className="home__gallery">
                 {logementsList.map((logement) => {
                     return (
                         <Card
@@ -26,7 +15,6 @@ export default function Gallery() {
                         />
                     )
                 })}
-            </CardsContainer>
         </main>
     )
 }

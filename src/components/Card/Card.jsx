@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import colors from '../../styles/colors'
-import '../../styles/Card.css'
+import './Card.scss'
 
 const CardTitle = styled.span`
     color: black;
@@ -36,12 +36,10 @@ const CardWrapper = styled.div`
 export default function Card({id, title, cover}) {
 
 	return (
-		<CardWrapper>
-			<Link to={`/pages/hosting/${id}`} className="gallery_card">
-				<CardImage src={cover} alt={"Kasa -" + title} />
-				<CardTitle>{title}</CardTitle>
+			<Link to={`/pages/hosting/${id}`} className="gallery__card">
+				<img src={cover} alt={"Kasa -" + title} />
+				<h3>{title}</h3>
 			</Link>
-		</CardWrapper>
 	)
 }
 
