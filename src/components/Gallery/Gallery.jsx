@@ -1,17 +1,17 @@
-import { logementsList } from '../../datas/Logements.js'
+import hostings from '../../datas/Logements.json'
 import Card from '../Card/Card.jsx'
 import './Gallery.scss'
 
 export default function Gallery() {
     return (
         <main className="home__gallery">
-                {logementsList.map((logement) => {
+                {hostings.map(({ id, title, cover }) => {
                     return (
                         <Card
-                            key={logement.id}
-                            id={logement.id}
-                            title={logement.title}
-                            cover={logement.cover}
+                            key={id}
+                            id={id}
+                            title={title}
+                            cover={cover}
                         />
                     )
                 })}
