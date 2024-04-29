@@ -1,12 +1,9 @@
-import { Link } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
 
-function Header() {
+export default function Header() {
     return (
-        <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/about">A Propos</Link>
-        </nav>
+        <div>
+            <Navbar></Navbar>
+        </div>
     )
 }
-
-export default Header
