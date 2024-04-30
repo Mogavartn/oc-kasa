@@ -1,1 +1,28 @@
 @import '../../sass/main.scss';
+
+.nav{
+    width: 98%;
+    display: flex;
+    font-weight: 400;
+    color: $primary-color;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 10px;
+
+    &__list{
+        @include flexRow;
+        font-size: 24px;
+        text-transform: uppercase;    
+        transition: transform 150ms ease-in-out;
+        gap: 57px;
+        list-style: none;
+        &--link{
+            text-decoration: none;
+            color: $quaternary-color;
+        &:hover{
+            transform: scale(1.05);
+        }
+        }
+    }
+}
