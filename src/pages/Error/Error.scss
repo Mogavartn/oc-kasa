@@ -16,7 +16,7 @@
     }
     &__home {
         @include flexRow ;
-        margin: 70px 0 70px 0;    
+        margin: 70px 0 70px 0; 
         &:hover {
             transform: scale(1.05);
             text-decoration: underline;

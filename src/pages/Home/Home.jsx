@@ -1,11 +1,10 @@
 import Gallery from '../../components/Gallery/Gallery.jsx'
-import Banner from '../../components/Banner/Banner.jsx'
-
+import HomeBanner from '../../components/Homebanner/Homebanner.jsx'
 
 function Home() {
     return (
         <body>
-            <Banner />
+            <HomeBanner />
             <Gallery />
         </body>
     )
