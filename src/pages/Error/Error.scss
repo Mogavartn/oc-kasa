@@ -1,0 +1,25 @@
+@import '../../sass/main.scss';
+
+.error {
+    @include flexCol;
+    &__404 {
+        font-size: 288px;
+        font-weight: 700;
+        color: $secondary-color;
+        margin: 0;    
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        color: $secondary-color;
+        margin: 70px 0 0 0;    
+    }
+    &__home {
+        @include flexRow ;
+        margin: 70px 0 70px 0;    
+        &:hover {
+            transform: scale(1.05);
+            text-decoration: underline;
+        }
+    }
+}

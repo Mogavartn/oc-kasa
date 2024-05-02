@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Error from './components/Error/Error'
+import Error from './pages/Error/Error'
 
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
@@ -21,7 +21,7 @@ ReactDOM.render(
                 <Route path="/" element={<Navigate to="/home" />} />
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/about" element={<About />} />
-                <Route exact path="/hosting" element={<Hosting />} />
+                <Route exact path="/hosting/:id" element={<Hosting />} />
                 <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
