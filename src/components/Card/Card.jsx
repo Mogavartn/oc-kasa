@@ -38,7 +38,7 @@ export default function Card({id, title, cover}) {
 	return (
 			<Link to={`/pages/hosting/${id}`} className="gallery__card">
 				<img src={cover} alt={"Kasa -" + title} />
-				<h3>{title}</h3>
+				<h2>{title}</h2>
 			</Link>
 	)
 }

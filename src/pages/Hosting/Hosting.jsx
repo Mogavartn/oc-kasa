@@ -1,8 +1,8 @@
 function Hosting() {
     return (
-        <div>
+        <body>
             <h1>Logement</h1>
-        </div>
+        </body>
     )
 }
 

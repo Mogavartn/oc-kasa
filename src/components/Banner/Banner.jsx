@@ -9,7 +9,7 @@ export default function Banner() {
                 src={bannerPhoto}
                 alt="Travel photography of an ocean landscape"
             />
-            <p className="banner__title">Chez vous, partout et ailleurs</p>
+            <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
         </div>
     )
 }
