@@ -6,6 +6,12 @@ import Collapse from '../../components/Collapse/Collapse'
 import Carousel from '../../components/Carousel/Carousel'
 import Error from '../Error/Error'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+
+const angleLeft = <FontAwesomeIcon icon={faAngleLeft} />
+const angleRight = <FontAwesomeIcon icon={faAngleRight} />
+
 export default function Hosting() {
     const { id } = useParams()
     const selectedHosting = hostings.find((data) => data.id === id)
