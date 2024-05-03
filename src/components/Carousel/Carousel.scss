@@ -6,8 +6,9 @@
     align-items: center;
 
     &__img {
-        max-width: 60%;
-        height: auto;
+        width: 1240px;
+        height: 415px;
         margin: 0 10px;
+        object-fit:cover;
     }
 }

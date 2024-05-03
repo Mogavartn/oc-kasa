@@ -1,1 +1,14 @@
 @import '../../sass/main.scss';
+
+
+.selectedHosting__collapses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+    margin: 30px auto;
+    width: 96%;
+    &--item{
+        width: 40%;
+}
+}

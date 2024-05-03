@@ -27,9 +27,8 @@ export default function Carousel({ images }) {
                     alt={`Slide ${currentIndex + 1}`}
                 />
             )}
-            <button 
-                className='carousel__button'
-                onClick={nextSlide}>Next
+            <button className="carousel__button" onClick={nextSlide}>
+                Next
             </button>
         </div>
     )

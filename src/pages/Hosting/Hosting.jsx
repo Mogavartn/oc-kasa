@@ -26,22 +26,23 @@ export default function Hosting() {
     const equipments = selectedHosting.equipments;
 
     return (
-        <div>
-            <div>
+        <div key={selectedHosting.id} className="selectedHosting">
                 <Carousel
                     images={imageSlider}
                 />
-            </div>
-            <div key={selectedHosting.id} className="selectedHosting">
-                
-                <Collapse
-                    title={"Equipements"}
-                    content={equipments}
+            <div className='selectedHosting__collapses'>
+                <div className="selectedHosting__collapses--item">
+                    <Collapse
+                        title={"Equipements"}
+                        content={equipments}
                 />
-                <Collapse
-                    title={"Description"}
-                    content={description}
+                </div>
+                <div className="selectedHosting__collapses--item">
+                    <Collapse
+                        title={"Description"}
+                        content={description}
                 />
+                </div>
             </div>
         </div>
     )
