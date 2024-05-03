@@ -12,7 +12,6 @@ export default function About() {
                     return (
                         <div key={id} className="about__body--collapse">
                             <Collapse
-                                style={{ margin: '30px 0' }}
                                 title={title}
                                 content={content}
                             />
