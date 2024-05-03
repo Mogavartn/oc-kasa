@@ -14,5 +14,5 @@ export default function Card({ id, title, cover }) {
 Card.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
 }

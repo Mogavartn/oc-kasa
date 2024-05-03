@@ -9,9 +9,6 @@ import About from '../../pages/About/About'
 import Hosting from '../../pages/Hosting/Hosting'
 import Error from '../../pages/Error/Error'
 
-
-
-
 export default function indexRoutes() {
     return (    
         <Router>
