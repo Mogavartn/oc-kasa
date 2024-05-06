@@ -5,7 +5,7 @@ import AboutBanner from '../../components/Aboutbanner/Aboutbanner.jsx'
 
 export default function About() {
     return (
-        <body className="about__body">
+        <main className="about__body">
             <AboutBanner />
             <div className="about__body--collapses">
                 {aboutDatas.map(({ id, title, content }) => {
@@ -19,6 +19,6 @@ export default function About() {
                     )
                 })}
             </div>
-        </body>
+        </main>
     )
 }
