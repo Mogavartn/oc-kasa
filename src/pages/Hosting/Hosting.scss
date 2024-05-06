@@ -1,7 +1,8 @@
 @import '../../sass/main.scss';
 
 
-.selectedHosting__collapses{
+.selectedHosting {
+    &__collapses{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -10,5 +11,26 @@
     width: 96%;
     &--item{
         width: 40%;
-}
+        }
+    }
+    &__articles {
+    @include flexRow;
+    justify-content: space-between;
+    max-width: 1240px; 
+    margin: 0 auto; 
+    }
+    &__title {
+    color: $secondary-color;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    }
+    &__host{
+        &--photo {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px    ;
+        }
+    }
 }

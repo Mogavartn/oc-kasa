@@ -6,12 +6,6 @@ import Collapse from '../../components/Collapse/Collapse'
 import Carousel from '../../components/Carousel/Carousel'
 import Error from '../Error/Error'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-
-const angleLeft = <FontAwesomeIcon icon={faAngleLeft} />
-const angleRight = <FontAwesomeIcon icon={faAngleRight} />
-
 export default function Hosting() {
     const { id } = useParams()
     const selectedHosting = hostings.find((data) => data.id === id)
@@ -42,20 +36,23 @@ export default function Hosting() {
     return (
         <div key={selectedHosting.id} className="selectedHosting">
             <Carousel images={imageSlider} />
-
-            <h2 className="selectedHosting__title">{title}</h2>
-            <p className="selectedHosting__location">{location}</p>
-            <div className="selectedHosting__tags">{tags}</div>
-
-            <div className='selectedHosting__host'>
-                <p className='selectedHosting__host--name'>{hostName}</p>
-                <img 
-                    className='selectedHosting__host--photo'
-                    src={hostPhoto}
-                    alt="photographie de l'hôte du logement"
-                />
+            <div className="selectedHosting__articles">
+                <article className="selectedHosting__infos">
+                    <h2 className="selectedHosting__title">{title}</h2>
+                    <p className="selectedHosting__location">{location}</p>
+                    <div className="selectedHosting__tags">{tags}</div>
+                </article>
+                <article className="selectedHosting__host">
+                        <p className="selectedHosting__host--name">
+                            {hostName}
+                        </p>
+                        <img
+                            className="selectedHosting__host--photo"
+                            src={hostPhoto}
+                            alt="photographie de l'hôte du logement"
+                        />
+                </article>
             </div>
-
             <div className="selectedHosting__collapses">
                 <div className="selectedHosting__collapses--item">
                     <Collapse title={'Equipements'} content={equipments} />

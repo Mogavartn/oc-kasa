@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
 import './Carousel.scss'
+import PictureCounter from '../Picturecounter/Picturecounter'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
+const angleLeft = <FontAwesomeIcon icon={faAngleLeft} />
+const angleRight = <FontAwesomeIcon icon={faAngleRight} />
 
 export default function Carousel({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -18,18 +24,35 @@ export default function Carousel({ images }) {
 
     return (
         <div className="carousel">
-            <button onClick={prevSlide}>Prev</button>
             {images.length > 0 && (
-                <img
-                    key={currentIndex}
-                    className="carousel__img"
-                    src={images[currentIndex]}
-                    alt={`Slide ${currentIndex + 1}`}
-                />
+                <div className="carousel__container">
+                    <img
+                        key={currentIndex}
+                        className="carousel__img"
+                        src={images[currentIndex]}
+                        alt={`Slide ${currentIndex + 1}`}
+                    />
+                    <PictureCounter
+                        className='picture_counter'
+                        pictures={images}
+                        pictureIndex={currentIndex}
+                    />
+                    <div className="carousel__icons">
+                        <i
+                            onClick={prevSlide}
+                            className="carousel__icon carousel__icon--left"
+                        >
+                            {angleLeft}
+                        </i>
+                        <i
+                            onClick={nextSlide}
+                            className="carousel__icon carousel__icon--right"
+                        >
+                            {angleRight}
+                        </i>
+                    </div>
+                </div>
             )}
-            <button className="carousel__button" onClick={nextSlide}>
-                Next
-            </button>
         </div>
     )
 }
