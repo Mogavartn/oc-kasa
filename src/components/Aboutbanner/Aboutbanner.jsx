@@ -3,9 +3,9 @@ import aboutBannerPhoto from '../../assets/aboutBannerPhoto.webp'
 
 export default function AboutBanner() {
     return (
-        <div className="banner">
+        <div className="aboutbanner">
             < img
-                className="banner__img"
+                className="aboutbanner__img"
                 src={aboutBannerPhoto}
                 alt="Travel photography of an ocean landscape"
             />

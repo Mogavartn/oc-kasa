@@ -5,13 +5,31 @@
     background-color: $quaternary-color;
     color: $primary-color;
     gap: 50px;
+    @include desktop {
+        @include margin-desktop;
+    }
+    
+    @include tablet {
+        @include margin-tablet;
+    }
+    
+    @include mobile {
+        @include margin-mobile;
+    }
     &__content{
-        padding: 66px 464px 29px 463px;
+        padding: 66px 20px 29px 20px;
+        text-align: center;
         @include flexCol;
         &--copyright{
             font-size: 24px;
             font-weight: 500;
             color: $primary-color;
+            @include tablet {
+                font-size: 40px;
+            }
+            @include mobile {
+                font-size: 18px;
+            }
         }
     }
 }

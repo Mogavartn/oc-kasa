@@ -1,3 +1,4 @@
+//Flex mixins
 @mixin flexRow($direction: row, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
@@ -10,4 +11,37 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+//Responsive mixins
+@mixin mobile {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+};
+
+@mixin tablet {
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        @content;
+    } 
+};
+
+@mixin desktop {
+    @media (min-width: 993px) {
+        @content;
+    }
+};
+
+
+@mixin margin-desktop {
+    margin: 40px 60px 40px;
+}
+
+@mixin margin-tablet {
+    margin: 20px 40px 40px;
+    
+}
+
+@mixin margin-mobile {
+    margin: 15px 25px 20px;
 }

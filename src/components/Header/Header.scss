@@ -3,4 +3,16 @@
 header {
     margin-top: 45px;
     margin-bottom: 50px;
+    
+    @include desktop {
+        @include margin-desktop;
+    }
+    
+    @include tablet {
+        @include margin-tablet;
+    }
+    
+    @include mobile {
+        @include margin-mobile;
+    }
 }

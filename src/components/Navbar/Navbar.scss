@@ -1,21 +1,38 @@
 @import '../../sass/main.scss';
 
 .nav {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline-start: 10px;
-
+    
+    
     &__logo {
-        width: 210px;
-        height: 68px;
+        width: 160px;
+        height: auto;
+        @include tablet {
+            width: 140px;
+        }
+
+        @include mobile {
+            width: 120px;
+        }
     }
 
     &__list {
         @include flexRow;
         transition: transform 150ms ease-in-out;
-        gap: 57px;
+        gap: 20px;
+        font-size: 24px;
+        @include tablet {
+            gap: 15px;
+            font-size: 18px;
+        }
+        @include mobile {
+            gap: 10px;
+            font-size: 12px;
+
+        }
         &--link {
             color: $quaternary-color;
             &:hover {

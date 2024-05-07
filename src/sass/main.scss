@@ -8,8 +8,17 @@
 body {
     position: relative;
     margin: 0 auto;
-    max-width: 1400px;
-    background: $primary-color;
+    background: $primary-color;  
+    @include desktop {
+        @include margin-desktop;
+    }  
+    @include tablet {
+        @include margin-tablet;
+    }
+    
+    @include mobile {
+        @include margin-mobile;
+    }
 }
 
 ul {
@@ -20,7 +29,13 @@ li {
     padding: 0;
     list-style-type: none;
     font-weight: 500;
-    font-size: 24px;
+    @include tablet {
+        text-transform: uppercase;    
+    }
+    
+    @include mobile {
+        text-transform: uppercase;    
+    }
 }
 
 a {

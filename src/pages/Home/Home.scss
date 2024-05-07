@@ -1,1 +1,15 @@
 @import '../../sass/main.scss';
+
+.home__body {
+    @include desktop {
+        @include margin-desktop;
+    }
+    
+    @include tablet {
+        @include margin-tablet;
+    }
+    
+    @include mobile {
+        @include margin-mobile;
+    }
+}

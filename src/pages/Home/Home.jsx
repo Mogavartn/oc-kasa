@@ -3,9 +3,11 @@ import HomeBanner from '../../components/Homebanner/Homebanner.jsx'
 
 function Home() {
     return (
-        <main>
+        <main className='home__body'>
+            <div>
             <HomeBanner />
             <Gallery />
+            </div>
         </main>
     )
 }
