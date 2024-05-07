@@ -1,9 +1,13 @@
 @import '../../sass/main.scss';
 
-.star-empty {
+.star {
+    font-size: 22px;
+    text-align: right;
+    margin: 20px 0 0 10px;
+    &-empty {
     color: #E3E3E3;
 }
-
-.star-full {
+    &-full {
     color: $secondary-color;
+}
 }

@@ -16,6 +16,7 @@
     &__articles {
     @include flexRow;
     justify-content: space-between;
+    align-items: flex-start;
     max-width: 1240px; 
     margin: 0 auto; 
     }
@@ -24,13 +25,50 @@
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%;
+    margin-bottom: 0;
+    }
+    &__location {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 4px 0;
     }
     &__host{
+        @include flexCol;
+        margin: 0;
+        &--infos {
+            @include flexRow;
+            margin-top: 20px;
+        }
         &--photo {
+            justify-self: flex-end;            
             border-radius: 50%;
             width: 64px;
-            height: 64px    ;
+            height: 64px;
+            margin : 0 0 0 5px;
         }
+        &--name {
+            color: $secondary-color;
+            text-align: right;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    &__tag {
+        @include flexRow;
+        text-align: center;
+        color: $primary-color;
+        border: $secondary-color;
+        background-color: $secondary-color; 
+        padding: 6px; 
+        border-radius: 10px; 
+        width: 115px;
+        height: 25px;
+        margin-right: 10px;
     }
 }

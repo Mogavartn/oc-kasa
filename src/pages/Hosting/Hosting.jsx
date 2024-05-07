@@ -35,7 +35,7 @@ export default function Hosting() {
     const rating = selectedHosting.rating
 
     const tags = selectedHosting.tags.map((item, index) => (
-        <p key={index}>{item}</p>
+        <p key={index} className="selectedHosting__tag">{item}</p>
     ))
 
     return (
@@ -48,6 +48,7 @@ export default function Hosting() {
                     <div className="selectedHosting__tags">{tags}</div>
                 </article>
                 <article className="selectedHosting__host">
+                    <div className='selectedHosting__host--infos'>
                         <p className="selectedHosting__host--name">
                             {hostName}
                         </p>
@@ -56,9 +57,12 @@ export default function Hosting() {
                             src={hostPhoto}
                             alt="photographie de l'hôte du logement"
                         />
-                        <Rating
+                    </div>
+                    <div className="selectedHosting__host--rating">
+                            <Rating
                             rating={rating}
-                        />
+                            />
+                    </div>
                 </article>
             </div>
             <div className="selectedHosting__collapses">
