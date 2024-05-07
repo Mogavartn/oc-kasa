@@ -8,15 +8,12 @@
     padding: 50px;
     border-radius: 25px;
     margin: 0 auto;
-    @include desktop {
-        @include margin-desktop;
-    }
-    
     @include tablet {
-        @include margin-tablet;
+        gap: 20px;
+        padding: 20px 0 0 0;
     }
-    
     @include mobile {
-        @include margin-mobile;
+        gap: 20px;
+        padding: 20px 0 0 0;
     }
 }

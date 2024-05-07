@@ -7,7 +7,6 @@
 
 body {
     position: relative;
-    margin: 0 auto;
     background: $primary-color;  
     @include desktop {
         @include margin-desktop;

@@ -14,7 +14,7 @@
     }
     
     @include mobile {
-        @include margin-mobile;
+        @include margin-mobile(15px 0 20px 0);
     }
     &__content{
         padding: 66px 20px 29px 20px;
@@ -31,5 +31,7 @@
                 font-size: 18px;
             }
         }
+    
     }
+    
 }

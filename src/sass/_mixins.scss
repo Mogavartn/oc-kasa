@@ -37,11 +37,10 @@
     margin: 40px 60px 40px;
 }
 
-@mixin margin-tablet {
-    margin: 20px 40px 40px;
-    
+@mixin margin-tablet ($top: 20px, $right: 10px, $bottom: 40px, $left: 10px) {
+    margin: $top $right $bottom $left;    
 }
 
-@mixin margin-mobile {
-    margin: 15px 25px 20px;
+@mixin margin-mobile($top: 15px, $right: 5px, $bottom: 20px, $left: 5px) {
+    margin: $top $right $bottom $left;
 }
