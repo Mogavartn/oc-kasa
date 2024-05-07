@@ -1,5 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes,
+    Navigate,
+} from 'react-router-dom'
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
@@ -9,8 +14,8 @@ import About from '../../pages/About/About'
 import Hosting from '../../pages/Hosting/Hosting'
 import Error from '../../pages/Error/Error'
 
-export default function indexRoutes() {
-    return (    
+export default function indexRoutes() {
+    return (
         <Router>
             <Header />
             <Routes>

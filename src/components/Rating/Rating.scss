@@ -5,17 +5,17 @@
     text-align: right;
     margin: 20px 0 0 10px;
     &-empty {
-    color: #E3E3E3;
-}
+        color: #e3e3e3;
+    }
     &-full {
-    color: $secondary-color;
-}
-@include tablet {
-    font-size: 16px;
-    margin: 20px 0 0 10px;
-}
-@include mobile {
-    font-size: 16px;
-    margin: 20px 0 0 0;
-} 
+        color: $secondary-color;
+    }
+    @include tablet {
+        font-size: 16px;
+        margin: 20px 0 0 10px;
+    }
+    @include mobile {
+        font-size: 16px;
+        margin: 20px 0 0 0;
+    }
 }

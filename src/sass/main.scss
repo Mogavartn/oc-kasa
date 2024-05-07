@@ -2,19 +2,19 @@
 @import './mixins';
 
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     position: relative;
-    background: $primary-color;  
+    background: $primary-color;
     @include desktop {
         @include margin-desktop;
-    }  
+    }
     @include tablet {
         @include margin-tablet;
     }
-    
+
     @include mobile {
         @include margin-mobile;
     }
@@ -29,11 +29,11 @@ li {
     list-style-type: none;
     font-weight: 500;
     @include tablet {
-        text-transform: uppercase;    
+        text-transform: uppercase;
     }
-    
+
     @include mobile {
-        text-transform: uppercase;    
+        text-transform: uppercase;
     }
 }
 

@@ -1,6 +1,6 @@
 @import '../../sass/main.scss';
 
-.home__gallery{
+.home__gallery {
     @include flexRow;
     flex-wrap: wrap;
     gap: 50px;

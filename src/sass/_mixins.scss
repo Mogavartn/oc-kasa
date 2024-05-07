@@ -15,30 +15,29 @@
 
 //Responsive mixins
 @mixin mobile {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         @content;
     }
-};
+}
 
 @mixin tablet {
     @media screen and (min-width: 769px) and (max-width: 992px) {
         @content;
-    } 
-};
+    }
+}
 
 @mixin desktop {
     @media (min-width: 993px) {
         @content;
     }
-};
-
+}
 
 @mixin margin-desktop {
     margin: 40px 60px 40px;
 }
 
-@mixin margin-tablet ($top: 20px, $right: 10px, $bottom: 40px, $left: 10px) {
-    margin: $top $right $bottom $left;    
+@mixin margin-tablet($top: 20px, $right: 10px, $bottom: 40px, $left: 10px) {
+    margin: $top $right $bottom $left;
 }
 
 @mixin margin-mobile($top: 15px, $right: 5px, $bottom: 20px, $left: 5px) {

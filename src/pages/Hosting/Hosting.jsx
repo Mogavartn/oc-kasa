@@ -13,7 +13,7 @@ export default function Hosting() {
     const selectedHosting = hostings.find((data) => data.id === id)
 
     if (!selectedHosting) {
-        return <Navigate to={"/error"} />
+        return <Navigate to={'/error'} />
     }
 
     const images = selectedHosting.pictures
@@ -26,7 +26,9 @@ export default function Hosting() {
     const rating = selectedHosting.rating
 
     const tags = selectedHosting.tags.map((item, index) => (
-        <p key={index} className="selectedHosting__tag">{item}</p>
+        <p key={index} className="selectedHosting__tag">
+            {item}
+        </p>
     ))
 
     return (
@@ -39,7 +41,7 @@ export default function Hosting() {
                     <div className="selectedHosting__tags">{tags}</div>
                 </article>
                 <article className="selectedHosting__host">
-                    <div className='selectedHosting__host--infos'>
+                    <div className="selectedHosting__host--infos">
                         <p className="selectedHosting__host--name">
                             {hostName}
                         </p>
@@ -50,9 +52,7 @@ export default function Hosting() {
                         />
                     </div>
                     <div className="selectedHosting__host--rating">
-                            <Rating
-                            rating={rating}
-                            />
+                        <Rating rating={rating} />
                     </div>
                 </article>
             </div>

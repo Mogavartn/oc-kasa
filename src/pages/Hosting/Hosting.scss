@@ -24,13 +24,13 @@
         @include tablet {
             @include flexCol;
             width: 250%;
-            margin: 0 100px; 
-            gap: 0px
+            margin: 0 100px;
+            gap: 0px;
         }
         @include mobile {
             @include flexCol;
-            width: 250%; 
-            margin: 0 100px; 
+            width: 250%;
+            margin: 0 100px;
             gap: 0px;
         }
     }
@@ -93,11 +93,11 @@
             @include flexRow;
             margin-top: 20px;
             @include tablet {
-            margin-left: 29rem;
+                margin-left: 29rem;
             }
             @include mobile {
                 margin-left: 7.8rem;
-                }
+            }
         }
         &--photo {
             justify-self: flex-end;
@@ -115,7 +115,6 @@
             @include tablet {
                 text-align: right;
                 font-size: 14px;
-
             }
             @include mobile {
                 font-size: 14px;

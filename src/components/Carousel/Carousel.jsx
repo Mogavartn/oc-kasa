@@ -33,7 +33,7 @@ export default function Carousel({ images }) {
                         alt={`Slide ${currentIndex + 1}`}
                     />
                     <PictureCounter
-                        className='picture_counter'
+                        className="picture_counter"
                         pictures={images}
                         pictureIndex={currentIndex}
                     />

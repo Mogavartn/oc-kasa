@@ -5,8 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
     &__logo {
         width: 160px;
         height: auto;
@@ -31,7 +30,6 @@
         @include mobile {
             gap: 10px;
             font-size: 12px;
-
         }
         &--link {
             color: $quaternary-color;

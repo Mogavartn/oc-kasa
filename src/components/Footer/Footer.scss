@@ -1,6 +1,6 @@
 @import '../../sass/main.scss';
 
-.footer{
+.footer {
     @include flexRow;
     background-color: $quaternary-color;
     color: $primary-color;
@@ -8,19 +8,19 @@
     @include desktop {
         @include margin-desktop;
     }
-    
+
     @include tablet {
         @include margin-tablet;
     }
-    
+
     @include mobile {
         @include margin-mobile(15px 0 20px 0);
     }
-    &__content{
+    &__content {
         padding: 66px 20px 29px 20px;
         text-align: center;
         @include flexCol;
-        &--copyright{
+        &--copyright {
             font-size: 24px;
             font-weight: 500;
             color: $primary-color;
@@ -31,7 +31,5 @@
                 font-size: 18px;
             }
         }
-    
     }
-    
 }

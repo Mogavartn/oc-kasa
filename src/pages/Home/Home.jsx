@@ -4,7 +4,7 @@ import './Home.scss'
 
 function Home() {
     return (
-        <main className='home__body'>
+        <main className="home__body">
             <HomeBanner />
             <Gallery />
         </main>
