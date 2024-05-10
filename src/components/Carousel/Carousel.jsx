@@ -16,17 +16,16 @@ export default function Carousel({ images }) {
     // Fonction pour passer à la diapositive suivante
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
         )
     }
 
     // Fonction pour passer à la diapositive précédente
     const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
         )
     }
-
 
     // Vérifie s'il n'y a qu'une seule image à afficher
     const isSingleImage = images.length === 1
@@ -37,12 +36,16 @@ export default function Carousel({ images }) {
             {images.length > 0 && (
                 <div className="carousel__container">
                     {/* Image actuellement affichée */}
-                    <img
-                        key={currentIndex}
-                        className="carousel__img"
-                        src={images[currentIndex]}
-                        alt={`Slide ${currentIndex + 1}`}
-                    />
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            className={`carousel__img ${
+                                index === currentIndex ? 'active' : ''
+                            }`}
+                            src={image}
+                            alt={`Slide ${index + 1}`}
+                        />
+                    ))}
                     {/* Affiche le PictureCounter seulement s'il y a plus d'une image */}
                     {!isSingleImage && (
                         <PictureCounter
@@ -56,14 +59,14 @@ export default function Carousel({ images }) {
                         <div className="carousel__icons">
                             {/* Icône de défilement vers la gauche */}
                             <i
-                                onClick={prevSlide}
+                                onClick={() => prevSlide()}
                                 className="carousel__icon carousel__icon--left"
                             >
                                 {angleLeft}
                             </i>
                             {/* Icône de défilement vers la droite */}
                             <i
-                                onClick={nextSlide}
+                                onClick={() => nextSlide()}
                                 className="carousel__icon carousel__icon--right"
                             >
                                 {angleRight}

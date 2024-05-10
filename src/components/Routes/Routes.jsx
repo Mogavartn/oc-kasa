@@ -18,6 +18,7 @@ export default function indexRoutes() {
         <Router>
             {/* Barre de navigation */}
             <Header />
+            {/* Routes avec effet de fondu */}
             <Routes>
                 {/* Redirection de la route '/' vers '/home' */}
                 <Route path="/" element={<Navigate to="/home" />} />
