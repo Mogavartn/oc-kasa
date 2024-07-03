@@ -1,4 +1,4 @@
-# Nina Carducci : Photographe
+# Kasa
 > Projet 5 du parcours Développeur Web de chez OpenClassrooms
 
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
