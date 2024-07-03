@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Nina Carducci : Photographe
+> Projet 5 du parcours Développeur Web de chez OpenClassrooms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-## Available Scripts
+&nbsp;
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+L'objectif était de développer une application web de location immobilière avec React.
+> Pour en savoir plus, retrouvez le brief de mission en bas de page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![screenshot](https://github.com/Mogavartn/portfolio-mo/blob/e06b77f13eeeba0076b1b108bf165e4f93def032/src/images/projects-kasa.jpg)
 
-### `npm test`
+## Compétences évaluées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Développer le front-end d'une application avec React et React Router:
+ - Créer une interface utilisateur moderne et réactive.
+ - Gérer la logique de présentation des données et les composants React.
+ - Utiliser React Router pour la navigation entre les pages.
 
-### `npm run build`
+2. Se concentrer sur le développement front-end:
+ - Implémenter l'interface utilisateur selon les maquettes fournies.
+ - Utiliser des données simulées extraites d'un fichier JSON.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Utiliser des outils de développement:
+ - Commencer avec Create React App pour simplifier la configuration initiale.
+ - Utiliser Node.js pour exécuter du code JavaScript en dehors du navigateur.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Utilisation de SASS pour gérer le CSS et l'implémentation d’animations CSS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+&nbsp;
+## Installation des dépendances
 
-### `npm run eject`
+> Cloner le repo en local
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> Ouvrir celui-ci avec son IDE, se placer à la racine du projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Ouvrir le terminal
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Installer Node et ses dépendances: ``npm add``
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Démarrage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Pour lancer l'application ``npm run start``
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+&nbsp;
+## Brief de mission
 
-### Code Splitting
+> Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Objectif : Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) et toutes les infos que je te donne ci-dessous. Et ce avec un code de qualité ! 
 
-### Analyzing the Bundle Size
+> Back-end / data : Le recrutement de la personne en charge du back-end n'est pas terminé et va prendre plus de temps que prévu. Du coup, il va falloir que tu fasses sans pour le moment. Je t'ai extrait les 20 dernières annonces de logements dans ce fichier JSON pour que tu puisses construire le Front qui correspond.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> Contraintes techniques : Tu trouveras les coding guidelines de Kasa ici. Comme tu le verras, nous utilisons habituellement Create React App pour créer les applications React, mais tu peux utiliser un autre bundler comme Vite par exemple si tu préfères.
 
-### Making a Progressive Web App
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Remarques sur l'évaluation
+    1. Développer une interface web avec Sass : Validé
+    Commentaires : Très bien
 
-### Advanced Configuration
+    2. Initialiser une application avec Create React App : Validé
+    Commentaires : L'application a correctement été initialisée avec CRA
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    3. Configurer la navigation entre les pages de l'application avec React Router : Validé
+    Commentaires : Parfait
 
-### Deployment
+    4. Développer des éléments de l'interface d'un site web grâce à des composants React : Validé
+    Commentaires : Très bien ici aussi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    5. Mettre en œuvre des animations CSS : Validé
+    Commentaires : Très bien
 
-### `npm run build` fails to minify
+## Livrables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Points forts :
+    Tout est complet, commenté et bien organisé
+
+## Soutenance
+
+    Une soutenance bien menée, dans les temps et très claire. Bravo !
